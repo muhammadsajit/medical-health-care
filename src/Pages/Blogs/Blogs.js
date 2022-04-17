@@ -19,6 +19,19 @@ const Blogs = () => {
                 <p>5.Token-based authentication</p>
 
             </div>
+            <div className='ps-3'>
+                <h2> What other services does firebase provide other than authentication?</h2>
+                <h4>Other services of Firebase</h4>
+                <p>1.Cloud Firestore</p>
+                <p>2.Cloud Functions</p>
+                <p>3.Hosting</p>
+                <p>4.Cloud Storage</p>
+                <p>5.Google Analytics</p>
+                <p>6.Predictions</p>
+                <p>7.Cloud Messaging</p>
+                <p>8.Dynamic Links</p>
+                <p>9.Remote Config</p>
+            </div>
         </div>
     );
 };
