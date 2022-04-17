@@ -25,13 +25,13 @@
         "name": "PCR testing",
         "price": "180",
         "description": " PCR test involves ... The test involves taking a swab of the inside of your nose and the back of your throat, using a long cotton bud.",
-        "img": "https://i.ibb.co/85JdQDt/covid-still-life-with-vaccine.jpghttps://i.ibb.co/dGSpGKv/cdc-Vdk-Zz0v7-EM8-unsplash.jpg"
+        "img": "https://i.ibb.co/4Rp4VGc/emin-baycan-MD2-sr-N-02o-unsplash.jpg"
     },
     {
         "id": 5,
         "name": " Ultrasonography ",
         "price": "100",
-        "description": "An ultrasonography is a procedure that uses high-frequency sound waves to create an image of inside the body. Ultrasonography helps you to monitor an unborn baby in the womb and make sure it is developing normally.",
+        "description": " Ultrasonography helps you to monitor an unborn baby in the womb and make sure it is developing normally.",
         "img": "https://i.ibb.co/M1K8RYR/patient-couch-doctor-makes-ultrasound-diagnosis-man-white-uniform.jpg"
     },
     {
