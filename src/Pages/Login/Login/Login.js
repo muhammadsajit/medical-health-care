@@ -26,9 +26,10 @@ const Login = () => {
         if(user){
             navigate(from,{replace:true})
         }
-        if(loading){
-            return <Loading></Loading>
-        }
+        // if(loading){
+        //     return <Loading></Loading>
+        // }
+        
         if (error ) {
             errorElement=
               <div>
@@ -42,7 +43,9 @@ const Login = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         signInWithEmailAndPassword(email, password)
+        
         }
+        
     const navigateRegister = () => {
         navigate('/registration')
     }

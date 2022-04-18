@@ -1,9 +1,11 @@
 import React from 'react';
+import Shipment from '../Shipment/Shipment';
 
 const Checkout = () => {
     return (
         <div>
-            <h1>Checkout</h1>
+            <h1 className='text-center text-primary'>Welcome to CheckOut</h1>
+            <Shipment></Shipment>
         </div>
     );
 };
