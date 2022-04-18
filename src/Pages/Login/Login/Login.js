@@ -3,7 +3,10 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -22,6 +25,9 @@ const Login = () => {
         const [sendPasswordResetEmail,sending] = useSendPasswordResetEmail(auth);
         if(user){
             navigate(from,{replace:true})
+        }
+        if(loading){
+            return <Loading></Loading>
         }
         if (error ) {
             errorElement=
@@ -44,7 +50,10 @@ const Login = () => {
         const email =emailRef.current.value;
         if(email){
          await sendPasswordResetEmail(email);
-         alert('sent emaail')
+         toast('sent email')
+        }
+        else{
+            toast ('please enter your email address')
         }
         
 
@@ -70,8 +79,9 @@ const Login = () => {
             </Form>
             {errorElement}
             <p>New to medical health care? <Link to='/registration' className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Please Registration</Link></p>
-            <p>Forget password? <Link to='/registration' className='text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link></p>
+            <p>Forget password? <button className='text-primary btn btn-link pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
             <SocialLogin></SocialLogin>
+            <ToastContainer />
         </div>
     );
 };
