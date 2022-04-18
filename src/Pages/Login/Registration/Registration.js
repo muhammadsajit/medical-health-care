@@ -11,7 +11,7 @@ const Registration = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
     const navigate = useNavigate();
     const navigateLogin = () => {
         navigate('/login')
@@ -24,6 +24,7 @@ const Registration = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
+       
         // const agree = event.target.terms.checked;
         //  if(agree){
         //     createUserWithEmailAndPassword(email,password)
