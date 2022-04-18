@@ -5,8 +5,8 @@ import './Service.css'
 const Service = ({service}) => {
     const{id,name,img,description,price}=service;
     const navigate= useNavigate()
-    const navigateCheckout= (id)=>{
-       navigate(`/service/${id}`)  
+    const navigateCheckout= ()=>{
+       navigate('/checkout');  
     }
     return (
         // service name,price,description button added
@@ -15,7 +15,7 @@ const Service = ({service}) => {
             <h2>{name}</h2>
             <p>Price:{price}</p>
             <p><small>{description}</small></p>
-            <button  onClick={()=>navigateCheckout(id)} className='  button  '>Detail</button>
+            <button  onClick={navigateCheckout} className='  button  '>Service</button>
         </div>
     );
 

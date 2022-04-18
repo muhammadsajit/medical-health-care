@@ -8,6 +8,7 @@ import Login from './Pages/Login/Login'
 import NotFound from './Pages/NotFound/NotFound';
 import Blogs from './Pages/Blogs/Blogs';
 import AboutMe from './Pages/AboutMe/AboutMe';
+import Checkout from './Pages/Checkout/Checkout';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
        <Route  path='/aboutMe'element={<AboutMe></AboutMe>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/checkout' element={<Checkout></Checkout>}></Route>
         <Route  path='*'element={<NotFound></NotFound>}></Route>
      </Routes>
      <Footer></Footer>
