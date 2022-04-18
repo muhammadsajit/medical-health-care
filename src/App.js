@@ -4,11 +4,12 @@ import Header from './Shared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Shared/Footer/Footer'
-import Login from './Pages/Login/Login'
+import Login from './Pages/Login/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Blogs from './Pages/Blogs/Blogs';
 import AboutMe from './Pages/AboutMe/AboutMe';
 import Checkout from './Pages/Checkout/Checkout';
+import Registration from './Pages/Login/Registration/Registration';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
        <Route  path='/aboutMe'element={<AboutMe></AboutMe>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/registration' element={<Registration></Registration>}></Route>
         <Route path='/checkout' element={<Checkout></Checkout>}></Route>
         <Route  path='*'element={<NotFound></NotFound>}></Route>
      </Routes>
