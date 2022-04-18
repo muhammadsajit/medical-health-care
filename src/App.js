@@ -1,9 +1,9 @@
 
 import './App.css';
-import Header from './Pages/Shared/Header/Header';
+import Header from './Shared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home/Home';
-
+import Footer from './Shared/Footer/Footer'
 import Login from './Pages/Login/Login'
 import NotFound from './Pages/NotFound/NotFound';
 import Blogs from './Pages/Blogs/Blogs';
@@ -22,7 +22,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route  path='*'element={<NotFound></NotFound>}></Route>
      </Routes>
-     
+     <Footer></Footer>
     </div>
   );
 }
