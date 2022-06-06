@@ -16,7 +16,7 @@ const Registration = () => {
     const [updateProfile, updating,error1] = useUpdateProfile(auth);
     const navigate = useNavigate();
     const navigateLogin = () => {
-        navigate('/login')
+        navigate('/login');
     }
     if(loading || updating){
         return <Loading></Loading>
